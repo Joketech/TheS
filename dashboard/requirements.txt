@@ -1,0 +1,3 @@
+# Local dashboard uses Python 3.11+ standard library only.
+# Optional native integrations require your independently installed Hermes runtime.
+# PDF export requires an explicitly configured CHROMIUM_PATH executable.

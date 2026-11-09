@@ -1,0 +1,7 @@
+{
+  "mira": {"profile": "your-coordinator", "home": "/absolute/path/to/your-own-runtime-home/profiles/your-coordinator", "thread_id": "YOUR_OWN_APPROVED_THREAD"},
+  "sage": {"profile": "your-researcher", "home": "/absolute/path/to/your-own-runtime-home/profiles/your-researcher", "thread_id": "YOUR_OWN_APPROVED_THREAD"},
+  "seline": {"profile": "your-writer", "home": "/absolute/path/to/your-own-runtime-home/profiles/your-writer", "thread_id": "YOUR_OWN_APPROVED_THREAD"},
+  "surge": {"profile": "your-growth", "home": "/absolute/path/to/your-own-runtime-home/profiles/your-growth", "thread_id": "YOUR_OWN_APPROVED_THREAD"},
+  "spectra": {"profile": "your-engineer", "home": "/absolute/path/to/your-own-runtime-home/profiles/your-engineer", "thread_id": "YOUR_OWN_APPROVED_THREAD"}
+}

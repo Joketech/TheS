@@ -1,0 +1,17 @@
+# Copy values into your process environment; this file is not auto-loaded.
+PORT=8181
+# DATA_DIR=/absolute/path/to/your-instance-data
+# BRAND_CONFIG=/absolute/path/to/this-repository/config/brand.json
+# CONTENT_DIR=/absolute/path/to/your-instance-data/content
+EXTERNAL_RUNTIME_ENABLED=0
+CHAT_SEND_ENABLED=0
+# External integration activation is a separate administrator operation.
+# HERMES_HOME=/absolute/path/to/your-own-hermes-instance
+# HERMES_PYTHON=/absolute/path/to/your-own-runtime/bin/python
+# NATIVE_ROOT=/absolute/path/to/your-own-runtime
+# PROFILE_ROUTES=/absolute/path/to/your-instance-data/profile-routes.json
+# CONTROL_SOCKET=/absolute/path/to/your-own-hermes-instance/gateway.sock
+# RUNTIME_GROUP_ID=your-own-approved-group
+# WORKFLOW_ORIGIN=your-own-approved-origin
+# CHROMIUM_PATH=/absolute/path/to/chromium
+# TLS_HOSTNAME=your-own-approved-hostname.example

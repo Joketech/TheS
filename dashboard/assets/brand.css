@@ -1,0 +1,7 @@
+:root{--brand-accent:#fa754e;--brand-soft:#54b77d}
+#mc-mission{--orange:var(--brand-accent);--green:var(--brand-soft)}
+#mc-mission #mc-crm-concept{--o:var(--brand-accent);--g:var(--brand-soft)}
+#mc-mission [data-brand-logo]{overflow:hidden;flex-shrink:0;font-size:18px}
+#mc-mission [data-brand="company"]:empty{display:none}
+#mc-mission [data-brand="name"],#mc-mission [data-brand-agent]{overflow-wrap:anywhere}
+@media(prefers-reduced-motion:reduce){#mc-mission *,#mc-mission *:before,#mc-mission *:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

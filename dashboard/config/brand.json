@@ -1,0 +1,46 @@
+{
+  "name": "Mission Control",
+  "company": "Your Company",
+  "attribution": "Mission Control",
+  "logo_text": "MC",
+  "logo_url": "",
+  "accent": "#d4a66a",
+  "accent_soft": "#b37a4c",
+  "agents": [
+    {
+      "id": "mira",
+      "label": "Coordinator",
+      "role": "Coordination",
+      "code": "A-00",
+      "initials": "CO"
+    },
+    {
+      "id": "sage",
+      "label": "Researcher",
+      "role": "Research",
+      "code": "A-01",
+      "initials": "RE"
+    },
+    {
+      "id": "seline",
+      "label": "Writer",
+      "role": "Writing",
+      "code": "A-02",
+      "initials": "WR"
+    },
+    {
+      "id": "surge",
+      "label": "Growth",
+      "role": "Marketing",
+      "code": "A-03",
+      "initials": "GR"
+    },
+    {
+      "id": "spectra",
+      "label": "Engineer",
+      "role": "Engineering",
+      "code": "A-04",
+      "initials": "EN"
+    }
+  ]
+}
