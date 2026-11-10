@@ -11,19 +11,12 @@ Source prepared for the existing public repository **https://github.com/Joketech
 - Optional: separately configured Chromium for server-side PDF export; a separately installed, compatible native agent runtime for operational integrations. Neither is bundled or downloaded automatically.
 
 ## Obtain a fresh copy
-For the prepared bundle, place `TheS-dashboard-publication-prep.bundle` in the current directory. Check its SHA256 against the separately delivered artifact manifest before cloning. Use a **new** destination:
+The initial source publication is already on public main. Obtain the current published source using an anonymous read-only clone:
 ```sh
-git clone --single-branch --branch feat/brand-dashboard-publication-prep-20261109 TheS-dashboard-publication-prep.bundle brand-dashboard
+git clone --branch main https://github.com/Joketech/TheS.git brand-dashboard
 cd brand-dashboard/dashboard
 ```
-The bundle preserves the original repository history/LICENSE; the full app is under `dashboard/`, not the repository root. The fresh-clone application source ZIP instead has top-level `repository/`; extract `TheS-dashboard-source.zip` into a new folder and enter `repository/dashboard`. Neither source form includes live data or credentials.
-
-Only **after** separately approved publication and independent verification that the exact branch exists remotely, the equivalent read-only public clone is:
-```sh
-git clone --single-branch --branch feat/brand-dashboard-publication-prep-20261109 https://github.com/Joketech/TheS.git brand-dashboard
-cd brand-dashboard/dashboard
-```
-That remote branch is not claimed to exist yet. These are clone/read instructions, not a push procedure; no remote repository is created or updated by preparation.
+The full application is under `dashboard/`, not the repository root. History and the original root LICENSE remain intact. Cloning source does not deploy the application, configure native integrations or grant authority to send messages. A separately supplied reviewed candidate bundle is a local handoff for acceptance; it is not proof that an unpushed candidate is on remote main.
 
 ## Initialize and run — disconnected by default
 Use an absolute **new, dedicated** data directory, not a live dashboard or agent profile directory:
@@ -104,7 +97,7 @@ Do not disable CSRF, proxy identity or origin checks to connect another device. 
 - **Overview/Agents:** full renderers, SSE/polling, dossier and usage/model panels retained. Real activity requires explicit own-instance profile routes/socket and retained source schemas. Model/account controls need compatible native adapters, accounts, allowlists and effective readback. Defaults deliberately unavailable. No existing accounts or verified model catalogue/pricing evidence ships here.
 - **Office:** local responsive canvas city, rotation, zoom, reduced motion and full-screen controls retained. Active towers require verified runtime activity; decorative traffic is independent.
 - **Tasks:** actual writable local board, create/update/delete/move paths and persisted readback. Native task collaboration is distinct from board records; `/workflow` commands need explicit runtime pins, approved contracts, native authority and owner-purpose sign-in. Completion never implies owner acceptance. Unknown admissions must be inspected, never blindly replayed.
-- **CRM:** full companies, contacts, opportunities, drafts, notes/actions, versioned mutations, idempotency and role-scoped modules retained. Browser local operations work with CSRF. Native agent access requires the new signing key, explicitly configured own profiles and own endpoint activation. No prospects, financial baseline or accepted draft is bundled. Approving a draft records a decision; it does not send outreach or collect money.
+- **CRM:** full companies, contacts, opportunities, drafts, notes/actions, versioned mutations, idempotency and role-scoped modules retained. Active / Qualified shows only evidence-gated retained audit decisions; Review needed holds absent/incomplete/discovery decisions and Disqualified / Rejected preserves history. Old stage labels alone never establish retention. The existing state API supplies append-only `crm-reevaluation-v1` notes and exact MIRA/SURGE create-audit provenance; own audit task IDs must be nonempty, never inherited from an original installation. Canonical score components are capacity25/need25/access20/value20/urgency10, totaling a retained80–100 with mandatory gates, reviewed opportunity, source and legitimate contact evidence. Semantic source verification remains an operator responsibility. Agent-work document references use own-instance `agent` plus relative `filename`, not host filesystem paths. Unsupported data stays pending rather than being fabricated. Browser local operations still require CSRF; configured native review authority is separate. No prospects, financial baseline or accepted drafts ship. Draft approval is not sending or collected cash.
 - **Content/Docs:** local Markdown list/read/save/delete, rendering and neutral technical guide retained. No original business manual/documents ship. PDF export requires explicitly configured Chromium (`CHROMIUM_PATH`) and compatible renderer; unavailable without it. PDF export remains unvalidated in this snapshot.
 - **Chat:** UI/history/recovery/attachment and send modules retained. Actual history requires explicit own group/thread/session routing; sends additionally require `CHAT_SEND_ENABLED=1` and compatible native transport/authority. No send/contact was exercised or authorized by cloning. Attachments are per-instance; uncertain work retains them, confirmed completion governs retention. No private history or uploaded files ship.
 - **Schedule:** full UI/cron action/edit modules retained. Explicit own runtime and compatible installed CLI/schema required; fresh state has no November or other automatic jobs. No scheduler run/edit/resume or model/resource change was exercised against a real runtime.
@@ -121,7 +114,7 @@ The Python suite starts **two actual fresh isolated copies** using the initializ
 
 Optional frontend security unit checks (Node already installed; no install is needed or performed):
 ```sh
-node tests/brand.test.cjs
+node --test tests/brand.test.cjs tests/crm_audit.test.cjs
 ```
 The Python/Node suites are not physical-device or Windows acceptance. Prior template browser evidence is separate engineering evidence, not bundled production screenshots. This publication preparation repeats source/fresh-clone backend and security checks; it does not claim new full browser-layout verification. Physical iPhone/full-screen/orientation acceptance, optional Chromium export, native Windows application operation and real native runtime/API compatibility remain explicitly unverified.
 
